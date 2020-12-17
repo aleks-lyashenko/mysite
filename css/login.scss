@@ -1,0 +1,143 @@
+//Обнуление стилей
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+//Подключение шрифтов, страниц, переменных
+@font-face {
+  font-family: 'Moreno Rough XThi';
+  src: url('../MorenoRough-XThin.eot');
+  src: url('../MorenoRough-XThin.eot?#iefix') format('embedded-opentype'),
+    url('../Moreno.woff') format('woff'),
+    url('../MorenoRough-XThin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Обертка
+.wrapper {
+  background-image: url(../img/bg-01.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+//Контентная часть
+.container {
+  margin: 100px 20px;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  padding: 60px 0px;
+  align-items: center;
+  max-height: 75%;
+}
+
+.title {
+  margin-bottom: 50px;
+  text-align: center;
+  & span {
+    color: #333333;
+    font-size: 39px;
+    font-weight: 700;
+  }
+}
+
+input {
+  padding: 10px;
+}
+
+input::-webkit-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.authorization-form {
+  display: flex;
+  display: block;
+  width: 80%;
+  flex: 1 1 80%;
+  & span {
+    font-size: 14px;
+    display: block;
+    color:  #333333;
+  }
+}
+
+.pass-box, .text-box {
+  border: none;
+  border-bottom: 2px solid #7f7f7f;;
+  margin: 10px 0;
+  display: block;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  flex: 1 1 100%;
+}
+
+.text-box {
+  margin-bottom: 25px;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(18,204,224,1) 0%, rgba(125,110,238,1) 50%, rgba(241,9,254,1) 100%); 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  box-shadow: 2px 2px 2px 2px rgb(107, 103, 103);
+  &:hover {
+    background: linear-gradient(90deg, rgba(241,9,254,1) 0%, rgba(125,110,238,1) 50%, rgba(18,204,224,1));
+    cursor: pointer;
+  }
+  &:active {
+    top: 5px;
+    box-shadow: 5px 5px 2px 2px rgb(107, 103, 103);
+
+  }
+}
+
+.vhod {
+  margin: 30px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+
+.social-items {
+  flex: 33.3333%;
+}
+
+.social-items a{
+  display: block;
+  box-shadow: 2px 2px 2px 2px rgb(107, 103, 103);
+}
