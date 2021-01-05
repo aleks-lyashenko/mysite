@@ -31,10 +31,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+  padding: 0 5%;
 }
 
 .container {
-  margin: 100px 20px;
   max-width: 500px;
   background-color: #fff;
   border-radius: 10px;
@@ -42,27 +42,27 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 60px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-height: 75%;
+  height: 75%;
+  margin: auto;
 }
 
 .title {
-  margin-bottom: 50px;
+  margin: 50px 0px;
   text-align: center;
 }
 
 .title span {
   color: #333333;
-  font-size: 39px;
+  font-size: 250%;
   font-weight: 700;
 }
 
@@ -82,8 +82,8 @@ input::-webkit-input-placeholder {
   display: block;
   width: 80%;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80%;
-          flex: 1 1 80%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .authorization-form span {
@@ -114,7 +114,7 @@ input::-webkit-input-placeholder {
 .btn {
   height: 50px;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
   border: none;
   font-size: 20px;
   width: 100%;
@@ -159,6 +159,7 @@ input::-webkit-input-placeholder {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 75%;
+  margin-bottom: 30px;
 }
 
 .social-items {
@@ -167,9 +168,9 @@ input::-webkit-input-placeholder {
           flex: 33.3333%;
 }
 
-.social-items a {
+.social-items img {
   display: block;
   -webkit-box-shadow: 2px 2px 2px 2px #6b6767;
           box-shadow: 2px 2px 2px 2px #6b6767;
 }
-/*# sourceMappingURL=admin.css.map */
+/*# sourceMappingURL=login.css.map */

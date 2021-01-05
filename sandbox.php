@@ -1,8 +1,13 @@
+<?php
+  require_once "_temp.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>WEB-песочница</title>
   <style>
     body, iframe {
@@ -24,7 +29,6 @@
     }
 
     .site {
-      padding: 5px;
       width: 400px;
       height: 900px;
     }
@@ -55,16 +59,26 @@
 
     <iframe class="site short" src="http://192.168.50.151:407/mobile.html" frameborder="0"></iframe>
 
-
   </div>
 
   <div class="radio" style="position: absolute; bottom: 250px; left:81%; text-align:center">
     <h3>РадиоРекорд</h3>
     <audio src="http://air.radiorecord.ru:8101/rr_320" controls>OK</audio>
   </div>
-  
 
+  <form action="http://ya.ru/yandsearch">
+    <input type="text" name="text">
+    <input type="submit" value="Найти">
+  </form>
 
+  <footer>
+    <?php
+    drawMenu($menu);
+    ?>
+    <div class="date">
+      <span>2020</span>
+    </div>
+  </footer>
 
 </body>
 </html>

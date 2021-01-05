@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шаблон страницы</title>
+  <link rel="stylesheet" href="css/test.css">
+
+  <!--Подключение слайдера-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+</head>
+<body>
+<!---Обертка-->
+  <div class="wrapper">
+  <!--Шапка-->
+    <header>
+      <div class="logo">
+        <a href="template.html"><img src="img/12.png" alt=""></a>
+      </div>
+      <div class="title">
+        <h2>
+          Заголовок 2
+        </h2>
+      </div>
+      <div class="btn">
+        <form action="">
+          <input type="text" name="" id="">
+          <input type="password" name="" id="">
+          <input type="submit" value="Подписаться">
+        </form>
+      </div>
+
+
+    </header>
+    
+  <!--Основная часть-->  
+    
+    <main>
+      <article>
+        <h1>Заголовок 1</h1>
+      </article>
+
+      <!-- Код слайдера -->
+      <div class="slider">
+        <div class="bxslider">
+          <div><img src="img/bg-01.jpg" title="Funky roots"></div>
+          <div><img src="img/google+.png" title="The long and winding road"></div>
+          <div><img src="img/bg-01.jpg" title="Happy trees"></div>
+        </div>
+      </div>
+  
+      
+      <nav>
+        <ul>
+          <li><a href="index.php">Главная</a></li>
+          <li><a href="pass.php">Поиск паролей</a></li>
+          <li><a href="to_do.php">Планировщик задач</a></li>
+          <li><a href="search.php">Поисковик</a></li>
+          <li><a href="sandbox.php">Песочница</a></li>
+        </ul>
+      </nav>
+
+    </main>
+
+  <!--Подвал-->
+
+    <footer>
+
+    </footer>
+
+  </div>
+
+  <script>
+    $(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        slideWidth: 600
+      });
+    });
+  </script>
+
+</body>
+</html>

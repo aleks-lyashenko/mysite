@@ -1,6 +1,5 @@
 <?php
   require_once "_temp.php";
-  header("Cache-control:no-store");
 ?>
 
 <!DOCTYPE html>
