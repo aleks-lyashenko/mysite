@@ -16,7 +16,6 @@ header {
   border: 5px rgb(221, 75, 38) solid;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .logo {
@@ -26,6 +25,8 @@ header {
 
 .logo img {
   height: 180px;
+  position: relative;
+  top: -15px;
 }
 
 .title {
