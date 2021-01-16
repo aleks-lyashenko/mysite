@@ -47,11 +47,11 @@ for(let i in arr1) {
  console.log(r2.width); */
 
  //Создание констуктора объектов
- function User(f,l,a) {
+/*  function User(f,l,a) {
    this.firstName = f;
    this.lastName = l;
    this.age = a;
- }
+ } */
 
  //Добавление свойства в прототип
  User.prototype.fullName = function () {
